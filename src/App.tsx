@@ -36,7 +36,7 @@ const PersonLink = ({ person, name }: PersonLinkProps) => {
   const className = person.sex === 'f' ? 'has-text-danger' : '';
 
   return (
-    <Link className={className} to={`/people/${person.slug}`}>
+    <Link className={className} to={`/people/${person?.slug}`}>
       {name}
     </Link>
   );
